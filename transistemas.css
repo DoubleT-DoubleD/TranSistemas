@@ -4,39 +4,21 @@
 	color: #202020;
 	margin: 0;
 	padding: 0;
+	list-style-type: none;
 }
-header .link-container,
-header .icon-hamburger-close {
+/*Header*/
+.link-container, .icon-hamburger-close {
 	display: none;
 }
-header .link-container {
+.link-container {
 	list-style-type: none;
 	color: #4F4F4F;
 	font-weight: 600;
 }
-.link-container li {
-	margin-bottom: 16px;
-}
-.active {
-	color: #F4A7B7;
-}
-.home {
-	padding: 16px;
-	display: block;
-	float: left;
-}
-.logo {
-	position: absolute;
-	width: 32px;
-	height: 34.31px;
-	left: 16px;
-	top: 16px;
-}
 header {
 	height: 80px;
 }
-
-header .hamburger-button{
+.hamburger-button{
 	float: right;
 	position: relative;
 	width: 24px;
@@ -45,7 +27,19 @@ header .hamburger-button{
 	background: transparent;
 	border: none;
 }
-
+/*logo*/
+.home {
+	padding: 16px;
+	display: block;
+	float: left;
+}
+.logo {
+	width: 32px;
+	height: 34.31px;
+	left: 16px;
+	top: 16px;
+}
+/*Menú*/
 #botonMenu{
 	text-decoration: none;
 	text-align:right;
@@ -54,10 +48,12 @@ header .hamburger-button{
 	background: transparent;
 	cursor: pointer;
 	font-weight: 400;
+	margin-bottom: 16px;
 }
 .boton-menu.active{
 	color: #F4A6B8;
 }
+/*Main*/
 main {
 	padding: 60px 32px;
 }
@@ -65,7 +61,7 @@ main {
 .contenido{
 	margin: 5px auto;
 }
-/* Somos transistemas */
+/*título*/
 .contenido h1{
 	width: 222px;
 	height: 74px;
@@ -77,7 +73,7 @@ main {
 	font-weight: 800;
 	margin-bottom: 16px;
 }
-/* Un espacio de formación en testing, programación y diseño para personas trans y no binaries, no excluyente. Nuestros talleres son gratuitos y se repiten durante el año. */
+/*texto*/
 .contenido p {
 	font-weight: 400;
 	width: 307px;
@@ -89,15 +85,13 @@ main {
 	color: #4F4F4F;
 }
 /*Botones del contenido*/
-.contenido .botones{
-	margin-top: 40px;
-	text-align: center;
-}
 .botones {
 	margin: 24px auto;
 	width: 240px;
 	line-height: 42px;
 	display: block;
+	margin-top: 40px;
+	text-align: center;
 }
 #boton{
 	text-decoration: none;
@@ -121,7 +115,7 @@ main {
 	top: 458px;
 }
 
-@media (max-width: 758px) {
+@media (max-width: 768px) {
 	/*menú hamburguesa solo activo en versión mobile*/
 	body.hamburger-menu-active header .link-container {
 		display: block;
@@ -155,5 +149,27 @@ main {
 	}
 	body.hamburger-menu-active .icon-hamburger {
 		display: none;
+	}
+}
+
+@media (min-width: 769px) {
+	.boton-menu{
+	  font-size: 14px;
+	  font-weight: 600;
+	  background: transparent;
+	  color: #000;
+	  padding-right: 7px;
+	  padding-left: 7px;
+	  height: 21px;
+	  margin-left: 15px;
+	  border-radius: 5px;
+	  cursor: pointer;
+	  display: inline-block;
+	  vertical-align: middle;
+	  padding-top: 3px;
+	}
+	.boton-menu.active{
+	  color: #FFF;
+	  background: #F4A6B8;
 	}
 }
