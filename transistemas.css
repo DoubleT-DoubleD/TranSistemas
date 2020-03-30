@@ -63,8 +63,6 @@ main {
 }
 /*título*/
 .contenido h1{
-	width: 222px;
-	height: 74px;
 	left: calc(50% - 222px/2 - 39px);
 	top: 124px;
 	font-size: 32px;
@@ -76,8 +74,6 @@ main {
 /*texto*/
 .contenido p {
 	font-weight: 400;
-	width: 307px;
-	height: 134px;
 	left: calc(50% - 307px/2 + 5.5px);
 	top: 214px;
 	font-size: 16px;
@@ -87,7 +83,6 @@ main {
 /*Botones del contenido*/
 .botones {
 	margin: 24px auto;
-	width: 240px;
 	line-height: 42px;
 	display: block;
 	margin-top: 40px;
