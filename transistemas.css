@@ -82,13 +82,14 @@ main {
 }
 /*Botones del contenido*/
 .botones {
-	margin: 24px auto;
 	line-height: 42px;
 	display: block;
 	margin-top: 40px;
 	text-align: center;
 }
 #boton{
+	margin: 24px auto;
+	display: block;
 	text-decoration: none;
 	text-align:center;
 	width: 241.09px;
