@@ -11,7 +11,6 @@
 	display: none;
 }
 .link-container {
-	list-style-type: none;
 	color: #4F4F4F;
 	font-weight: 600;
 }
@@ -35,13 +34,12 @@ header {
 }
 .logo {
 	width: 32px;
-	height: 34.31px;
+	height: auto;
 	left: 16px;
 	top: 16px;
 }
 /*Menú*/
 #botonMenu{
-	text-decoration: none;
 	text-align:right;
 	padding: 0px;
 	font-size: 16px;
@@ -100,7 +98,6 @@ main {
 	padding-right: 7px;
 	padding-left: 7px;
 	border-radius: 10px;
-	left: calc(50% - 241.09px/2 - 0.46px);
 }
 .primerBoton {
 	background: #F4A6B8;
@@ -147,25 +144,113 @@ main {
 		display: none;
 	}
 }
-
+@media (min-width: 650px) {
+	/*Main*/
+	main{
+		padding: 60px 60px;
+	}
+}
 @media (min-width: 769px) {
+	.logo{
+		width: auto;
+		height: 48px;
+		left: 24px;
+		top: 24px;
+	}
+	.hamburger-button {
+		display: none;
+	}
+	.link-container {
+		display: block;
+		float: right;
+		margin: 30px 24px 0 0;
+	}
+	#botonMenu{
+		float: left;
+		font-size: 14px;
+		line-height: 17px;
+	}
 	.boton-menu{
-	  font-size: 14px;
-	  font-weight: 600;
-	  background: transparent;
-	  color: #000;
-	  padding-right: 7px;
-	  padding-left: 7px;
-	  height: 21px;
-	  margin-left: 15px;
-	  border-radius: 5px;
-	  cursor: pointer;
-	  display: inline-block;
-	  vertical-align: middle;
-	  padding-top: 3px;
+		font-weight: 600;
+		background: transparent;
+		color: #000;
+		padding-right: 7px;
+		padding-left: 7px;
+		height: 18px;
+		margin-left: 15px;
+		border-radius: 5px;
+		cursor: pointer;
+		display: inline-block;
+		vertical-align: middle;
+		padding-top: 3px;
 	}
 	.boton-menu.active{
-	  color: #FFF;
-	  background: #F4A6B8;
+		color: #FFF;
+		background: #F4A6B8;
+	}
+	/*Main*/
+	main{
+		padding: 60px 127px;
+	}
+	/*título*/
+	.contenido h1{
+		left: calc(50% - 615px/2 - 205.5px);
+		top: 194px;
+		font-size: 39px;
+		line-height: 45px;
+	}
+	/*texto*/
+	.contenido p {
+		left: calc(50% - 1025px/2 - 0.5px);
+		top: 289px;
+		font-size: 23px;
+		line-height: 40px;
+	}
+	/*Botones del contenido*/
+	.botones {
+		line-height: 42px;
+		display: block;
+		margin-top: 40px;
+		text-align: center;
+	}
+	#boton{
+		margin: 24px 20px;
+		display: inline-block;
+		text-align:center;
+		color: #FFF;
+		font-weight: 600;
+		padding: 0px;
+		padding-right: 7px;
+		padding-left: 7px;
+		border-radius: 10px;
+		top: 523px;
+		width: 248px;
+		font-size: 24px;
+	}
+}
+@media (min-width: 1080px){
+	.logo {
+		width: 44px;
+		height: auto;
+		margin-top: 16px;
+    margin-left: 20px;
+	}
+	/*Main*/
+	main{
+    padding: 0px 207px;
+	}
+	/*contenido*/
+	.contenido {
+		margin-top: 244px;
+	}
+	/*título*/
+	.contenido h1{
+		font-size: 58px;
+		Line Height: 70.7px;
+	}
+	/*texto*/
+	.contenido p {
+		font-size: 32px;
+		line-height: 55px;
 	}
 }
